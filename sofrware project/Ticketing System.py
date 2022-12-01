@@ -5,7 +5,7 @@ def banner():
     print("________________________________________________")
     print("Select from the following choice:")
     print("\t0:Exit")
-    print("\t1:Submit helpdesk tickets")
+    print("\t1:Submit help desk tickets")
     print("\t2:Show all tickets")
     print("\t3.Reopened to ticket by number")
     print("\t4:Re-open resolved tickets")
@@ -29,8 +29,8 @@ class Tickets(object):
         self.Staff_Id = input("Please enter a staff ID : ")
         self.Name = input("Please enter a creator name: ")
         self.Email = input("Please enter a email address: ")
-        self.Description = input("If you require a new password type: Password Change"
-                                "Enter description of problem: ")
+        self.Description = input("If you require a new password type: Password Change\n"
+                                "Enter description of problem:\n")
         # if User put in "Password change", join characters using staff id and name.
         if self.Description == "password change":
             self.Staff_Id.split()
@@ -38,7 +38,7 @@ class Tickets(object):
             self.Name.split()
             password_str = self.Name[:3]
             password = password_int + password_str
-            print(password)
+
             self.Response = "This is a new password: " + str(password)
             self.TicketStatus = 'Closed'
         else:
@@ -101,7 +101,7 @@ class Tickets(object):
         close_count = Tickets.Count - open_count
         print("Tickets Created:", Tickets.Count)
         print("Tickets To Solve:", open_count)
-        print("Tckets Resolved:", close_count)
+        print("Tickets Resolved:", close_count)
 
 
 
