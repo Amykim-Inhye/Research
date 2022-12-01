@@ -123,6 +123,7 @@ class main:
                 ask_add = input("Do you want to submit another ticket?(Y/N)\n")
                 if ask_add == 'N':
                     break
+            Tickets.stateDisplay(a)
         elif choice == 2:
             Tickets.stateDisplay(a)
             print("\nPrinting Tickets:\n")
@@ -130,8 +131,10 @@ class main:
                 List[i].Display()
         elif choice == 3:
             Tickets.Search_as_Number(a)
+            Tickets.stateDisplay(a)
         elif choice == 4:
             Tickets.reopen_slovedTicket(a)
+            Tickets.stateDisplay(a)
         elif choice == 5:
             print("This is state of tickets:\n")
             Tickets.stateDisplay(a)
