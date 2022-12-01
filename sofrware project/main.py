@@ -1,23 +1,7 @@
 # Create storage for tickets information.
-dictionary = [{"ticket number": 2000,
-               "Staff Id": 2345,
-               "Email": "eoingnw@gmail.com",
-               "Description": "Password change",
-               "Ticket Status": "Open",
-               "response": "User password was set 1234"},
-              {"ticket number": 2001,
-               "Staff Id": 2142351,
-               "Email": "AMY@gmail.com",
-               "Description": "Password change",
-               "Ticket Status": "Closed",
-               "response": "User password was set 213414"},
-              {"ticket number": 2002,
-               "Staff Id": 22351,
-               "Email": "Sophie@gmail.com",
-               "Description": "Password change",
-               "Ticket Status": "Closed",
-               "response": "User password was set 213414"}
-              ]
+dictionary = []
+
+
 
 
 def banner():
